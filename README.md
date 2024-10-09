@@ -12,4 +12,4 @@ Auteurs
 
 ### Import/export BDD
 
-Gestionnaire base de données: http://localhost:8069/web/database/manager
+Utiliser la sauvegarde par fichier .zip du gestionnaire base de données à l'adresse http://localhost:8069/web/database/manager.
