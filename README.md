@@ -7,6 +7,10 @@ Auteurs
 - Tom Mandin
 - Jan De Rudder
 
+## Planification
+
+![alt text](doc/readme/planification.png)
+
 
 ## Développement
 
