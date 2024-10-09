@@ -1,7 +1,7 @@
-version: '3.1'
 services:
   web:
     image: odoo:17.0
+    container_name: odoo-web
     depends_on:
       - db
     ports:
@@ -15,7 +15,8 @@ services:
     secrets:
       - postgresql_password
   db:
-    image: postgres:15
+    image: postgres:17-alpine
+    container_name: odoo-db
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD_FILE=/run/secrets/postgresql_password
