@@ -1,0 +1,7 @@
+<odoo>
+  <menuitem id="cinema_movie_menu_root" name="Cinema">
+    <menuitem id="cinema_movie_first_level_menu" name="Movies">
+      <menuitem id="cinema_movie_model_menu_action" action="cinema_movie_action"/>
+    </menuitem>
+  </menuitem>
+</odoo>
