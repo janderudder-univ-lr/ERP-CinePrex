@@ -5,7 +5,9 @@ class Screening(models.Model):
     _name = 'cinema.screening'
     _description = 'Screening'
 
-    # association auditorium <-> movie
+    # association: Auditorium <-> Movie
+    #                          |
+    #                      Screening
     auditorium_id = fields.Many2one('cinema.auditorium', string='Auditorium')
     movie_id = fields.Many2one('cinema.movie', string='Movie')
 
