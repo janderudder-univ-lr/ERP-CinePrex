@@ -12,4 +12,4 @@ class Screening(models.Model):
     movie_id = fields.Many2one('cinema.movie', string='Movie')
 
     day = fields.Selection(day_enum.DayEnum.DAY, string='Day of the Week')
-    time = fields.Float(string='Time', compute="_compute_time")
+    time = fields.Float(string='Time')
