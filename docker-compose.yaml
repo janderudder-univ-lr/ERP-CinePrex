@@ -14,8 +14,10 @@ services:
       - PASSWORD_FILE=/run/secrets/postgresql_password
     secrets:
       - postgresql_password
+    command: odoo -u all -d database
+
   db:
-    image: postgres:17-alpine
+    image: postgres:15
     container_name: odoo-db
     environment:
       - POSTGRES_DB=postgres
