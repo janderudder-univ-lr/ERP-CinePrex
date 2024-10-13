@@ -6,4 +6,4 @@ class CinemaComplex(models.Model):
 
     name = fields.Char(string='Cinema Complex Name')
     address = fields.Char(string='Address', required=True)
-    auditorium_ids = fields.One2many('cinema.auditorium', 'cinema_id', string='Auditoriums')
+    auditorium_ids = fields.One2many('cinema.auditorium', 'complex_id', string='Auditoriums')
