@@ -1,2 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_auditorium_model,access_auditorium_model,model_auditorium_movie,base.group_user,1,1,1,1
+access_cinema_complex_model,access_cinema_complex_model,model_cinema_complex,base.group_user,1,1,1,1
+
 access_movie_model,access_movie_model,model_cinema_movie,base.group_user,1,1,1,1
+access_screening_model,access_screening_model,model_cinema_screening_movie,base.group_user,1,1,1,1
+access_seat_model,access_seat_model,model_cinema_seat,base.group_user,1,1,1,1

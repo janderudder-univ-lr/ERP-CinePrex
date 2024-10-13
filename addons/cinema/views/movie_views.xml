@@ -1,0 +1,35 @@
+<odoo>
+  <record id="cinema_movie_action" model="ir.actions.act_window">
+    <field name="name">Movies</field>
+    <field name="res_model">cinema.movie</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="cinema_movie_view_tree" model="ir.ui.view">
+    <field name="name">Movie view tree</field>
+    <field name="model">cinema.movie</field>
+    <field name="arch" type="xml">
+      <tree string="Channem">
+        <field name="name"/>
+        <field name="duration" string="Duration (minutes)"/>
+        <field name="category"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="cinema_movie_view_form" model="ir.ui.view">
+    <field name="name">Cinema form</field>
+    <field name="model">cinema.movie</field>
+    <field name="arch" type="xml">
+      <form string="New Movie">
+        <sheet>
+          <group>
+            <field name="name" placeholder="Movie title"/>
+            <field name="duration" string="Duration (in minutes)" placeholder=""/>
+            <field name="category"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+</odoo>
